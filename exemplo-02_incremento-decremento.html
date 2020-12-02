@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de Constru&ccedil;&atilde;o de P&aacute;ginas WEB- Mod. 2</title>
+        <style>
+            body
+            {
+                background-color:lightblue;
+            }
+            table, tr, th, td
+            {
+                
+                border: 1px solid;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Incrementos e decrementos<hr></h2>
+        </header>
+        <section>
+            <h3>Diferen&ccedil;a de i++ para ++i<br></h3>
+            <table>
+                <tr>
+                    <th>Incremento Prefixado</th>
+                    <th>Incremento Posfixado</th>
+                </tr>
+                <tr>
+                    <script>
+                        var i=4, j=4;
+                        
+                        x = 2 * ++i;
+                        document.write("<td>i = 4<br>x = 2 * ++i<p>");
+                        document.write("x = ", x, "<br>i = ", i, "</td>");
+
+                        x = 2 * j++;
+                        document.write("<td>j =  4<br>x = 2 * j++<p>");
+                        document.write("x = ", x, "<br>j = ", j, "</td>");
+                    </script>
+                </tr>
+            </table>
+            <h3>Diferen&ccedil;a de i-- para --i<br></h3>
+            <table>
+                <tr>
+                    <th>Decremento Prefixado</th>
+                    <th>Decremento Posfixado</th>
+                </tr>
+                <tr>
+                    <script>
+                        var i=4, j=4;
+                        
+                        x = 2 * --i;
+                        document.write("<td>i = 4<br>x = 2 * --i<p>");
+                        document.write("x = ", x, "<br>i = ", i, "</td>");
+
+                        x = 2 * j--;
+                        document.write("<td>j =  4<br>x = 2 * j--<p>");
+                        document.write("x = ", x, "<br>j = ", j, "</td>");
+                    </script>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>

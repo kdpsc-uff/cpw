@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de Constru&ccedil;&atilde;o de P&aacute;ginas WEB- Mod. 2</title>
+        <style>
+            body
+            {
+                background-color:lightblue;
+            }
+            table, tr, th, td
+            {
+                
+                border: 1px solid;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <section>
+            <script>
+                //Função prompt(message)
+                x = prompt("\tSeja bem vindo!\n\tEntre com uma string:","");
+                //Função isNaN(value)
+                if (isNaN(x))
+                {
+                    mensagem ="Voce digitou a string " + x +"?";
+                    //Função confirm(message)
+                    if (confirm(mensagem))
+                        //Função document.write(output)
+                        document.write("<p>Obrigado!<br>Voce digitou a string <b>" + x + "</b></p>");
+                } 
+                else
+                {
+                    //Função alert(output)
+                    alert("\tERRO!\n\tesperavamos por uma string!");
+                };
+
+                //Função parseInt(str,base) 
+                num = "3A";
+                x = parseInt(num);
+                document.write("<p>" + x + "<br>");
+
+                num = "3A";
+                x = parseInt(num,16);
+                document.write(x + "</p>");
+
+                //Função parseFloat(str)
+                num = "3.4"
+                x = parseFloat(num);
+                document.write("<p>" + x + "<br>");
+
+                num = "ABC"
+                x = parseFloat(num);
+                document.write(x + "</p>");
+
+                //Função eval(str)
+                x = 5;
+                expr = "x * 2 + 5";
+                document.write("<p>" + expr + "</br>");
+
+                result = eval(expr);
+                document.write(result + "</p>");
+            </script>
+        </section>
+    </body>
+</html>

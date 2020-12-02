@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de Constru&ccedil;&atilde;o de P&aacute;ginas WEB - Mod. 2</title>
+    <script>
+        var nome = prompt("Qual seu nome?","");
+    </script>
+    </head>
+    <body>
+        <head>
+            <h2>Terceiro exemplo de JavaScript</h2>
+        </head>
+        <section>
+            <script>
+                if (nome !== "" && isNaN(nome)) 
+                {
+                    document.write("<h3>Bem-vindo " + nome + "!</h3>");
+                    n = prompt("Digite algo!","");
+                    if (n !== "")
+                    {
+                        alert("Iremos providenciar a avaliacao\n\n\n\tEspere um pouco!" + "\n_______________________________\n\n\nPaciencia!\n");
+                        if (isNaN(n))
+                        {
+                            var mensagem = "Voce digitou a string: \t" + n;
+                            if (confirm(mensagem))
+                                document.write("<h3>Acertei!</h3>");
+                        }
+                        else
+                        {
+                            var mensagem = "Voce digitou o numero: \t" + n;
+                            if (confirm(mensagem))
+                                document.write("<h3>Acertei!</h3>");
+                        }
+                    }
+                    else
+                    {
+                        alert("Voce nao digitou nada...")
+                    }
+                }
+                else
+                {
+                    alert("Seu nome nao deve ser uma string vazia!\nSeu nome nao pode ser um numero!")
+                }
+            </script>
+        </section>
+    </body>
+</html>

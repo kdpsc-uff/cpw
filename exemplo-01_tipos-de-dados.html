@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de Constru&ccedil;&atilde;o de P&aacute;ginas WEB- Mod. 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Primeiro Exemplo de JavaScript
+            </h1>
+        </header>
+        <section>
+            <h2>
+                Usando os tipos de dados para calcular pot&ecirc;ncias de 2.
+            </h2>
+            <script>
+
+                elev="2 elevado a "   
+                
+                for( i=1, pot=2; i <= 20; i++, pot*=2 )
+                {
+                    if ( i <= 10 )
+                    {
+                        document.write(elev + i + " = "+ pot);
+                        document.write("<br>");
+                    }
+
+                }   
+                document.write("<br><h2>Tipos especiais:</h2>");
+                
+                document.write(" 2 dividido por 0 = " + 2/0 );
+                //Infinity
+                document.write('<br>');
+                
+                document.write("-2 dividido por "+ 0 +' = '+ -2/0);
+                //-Infinity
+                document.write('<br>');
+
+                document.write("0 dividido por "+ 0 + ' = '+ 0/0 );
+                //NaN
+            </script>
+            <h2>Javascript orientado a eventos</h2>
+            <form>
+                <input type="button" value="Aperte aqui" onclick="alert('clicaram-me!')">
+            </form>
+        </section>
+    </body>
+</html>
